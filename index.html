@@ -14,6 +14,44 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --primary-color: #0078ff;
+            --secondary-color: #00a6eb;
+            --dark-color: #2d3748;
+            --light-color: #f8f9fa;
+            --success-color: #2dce89;
+            --danger-color: #f5365c;
+            --text-color: #525f7f;
+            --transition: all 0.3s ease;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 120, 255, 0.8), rgba(0, 166, 235, 0.8)), url('https://source.unsplash.com/random/1920x1080/?marketing') no-repeat center center/cover;
+        }
+        
+        .progress-bar {
+            background-color: var(--primary-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .section-divider {
+            background-color: var(--primary-color);
+        }
+        
+        .service-icon {
+            color: var(--primary-color);
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -61,6 +99,136 @@
             </div>
         </div>
     </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-right">
+                    <div class="profile-img-container">
+                        <img src="https://via.placeholder.com/400x400" alt="Muhammad Imran" class="img-fluid rounded-circle profile-img">
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <h3>Who am I?</h3>
+                    <p class="lead">I'm an experienced Area Supervisor at Pakistan Beverages with expertise in Digital Marketing and Sales Strategy.</p>
+                    <p>With a strong background in sales and marketing, I specialize in developing and implementing effective digital marketing campaigns that drive business growth and increase market share. My expertise in team management and customer relationship building has consistently resulted in exceeding sales targets and expanding brand presence in competitive markets.</p>
+                    <p>At Pakistan Beverages, I oversee regional sales operations, coordinate marketing initiatives, and develop strategies to enhance brand visibility and customer engagement. I'm passionate about leveraging digital platforms to create innovative marketing solutions that connect with target audiences and deliver measurable results.</p>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h3 class="text-center mb-4" data-aos="fade-up">Experience & Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Area Supervisor</h4>
+                                <p class="timeline-date">Pakistan Beverages | 2020 - Present</p>
+                                <p>Leading regional sales teams, implementing marketing strategies, and driving business growth through digital marketing initiatives.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Digital Marketing Specialist</h4>
+                                <p class="timeline-date">2018 - 2020</p>
+                                <p>Developed and executed digital marketing campaigns, managed social media presence, and implemented SEO strategies to increase online visibility.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Bachelor's in Marketing</h4>
+                                <p class="timeline-date">2014 - 2018</p>
+                                <p>Graduated with honors, specializing in digital marketing and sales management.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Expertise that drives results</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Digital Marketing</h6>
+                            <h6>95%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Sales Strategy</h6>
+                            <h6>90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Team Management</h6>
+                            <h6>92%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>SEO & SEM</h6>
+                            <h6>88%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Social Media Marketing</h6>
+                            <h6>94%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Market Analysis</h6>
+                            <h6>85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="section-padding">
@@ -74,7 +242,7 @@
             <div class="row">
                 <div class="col-lg-4 mb-4" data-aos="fade-right">
                     <div class="profile-img-container">
-                        <img src="./" alt="Imran" class="img-fluid rounded-circle profile-img">
+                        <img src=imranjpg profile-img">
                     </div>
                 </div>
                 <div class="col-lg-8" data-aos="fade-left">
