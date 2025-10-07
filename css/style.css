@@ -145,6 +145,14 @@ a:hover {
     margin-bottom: 30px;
 }
 
+/* Hero image sizing for responsiveness */
+.hero-img {
+    width: clamp(140px, 35vw, 240px);
+    height: clamp(140px, 35vw, 240px);
+    object-fit: cover;
+    border: 6px solid rgba(255, 255, 255, 0.85);
+}
+
 .animated-heading {
     animation: fadeInDown 1s ease-out;
 }
@@ -194,6 +202,7 @@ a:hover {
 .progress-bar {
     background-color: var(--primary-color);
     transition: width 1.5s ease-in-out;
+    width: 0; /* animate from 0 via JS */
 }
 
 /* Timeline */
@@ -294,6 +303,36 @@ a:hover {
     color: var(--text-color);
 }
 
+/* Portfolio overlay hover effect */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(45, 55, 72, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: var(--transition);
+}
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
 /* Services Section */
 .service-card {
     padding: 30px 20px;
@@ -337,6 +376,36 @@ a:hover {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 15px 0;
+}
+.contact-item .icon {
+    font-size: 20px;
+    color: var(--primary-color);
+    min-width: 28px;
+}
+.contact-item .text h4 {
+    margin-bottom: 4px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 6px 0;
+    background: #25D366;
+    color: #fff;
+    border-radius: 6px;
+}
+.contact-btn:hover {
+    opacity: 0.9;
+}
+.phone-btn {
+    background: #007bff;
 }
 
 .form-control {
